@@ -4,6 +4,7 @@ import { useCart as useCartHook, CartItem } from '../hooks/useCart';
 interface CartContextType {
   cartItems: CartItem[];
   addItemToCart: (item: Omit<CartItem, 'quantity'>) => void;
+  decrementItemQuantity: (id: string) => void; 
   removeItemFromCart: (id: string) => void;
   clearCart: () => void;
   cartTotal: number;

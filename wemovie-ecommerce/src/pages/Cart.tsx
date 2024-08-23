@@ -270,7 +270,7 @@ const FullWidthButton = styled(Button)`
 `;
 
 const Cart: React.FC = () => {
-  const { cartItems, addItemToCart, removeItemFromCart, cartTotal, clearCart } = useCart();
+  const { cartItems, addItemToCart, decrementItemQuantity, removeItemFromCart, cartTotal, clearCart } = useCart();
   const [isPurchaseComplete, setPurchaseComplete] = useState(false);
   const navigate = useNavigate();
 
@@ -320,7 +320,7 @@ const Cart: React.FC = () => {
                     R$ {item.price.toFixed(2)}
                   </div>
                   <TrashIconMobile
-                    onClick={() => removeItemFromCart(item.id)}
+                    onClick={() => removeItemFromCart(item.id)} // Remove todo o item
                   />
                 </ProductDetailsMobile>
               </div>
@@ -328,7 +328,7 @@ const Cart: React.FC = () => {
                 <QuantityCounter
                   quantity={item.quantity}
                   onIncrement={() => addItemToCart(item)}
-                  onDecrement={() => removeItemFromCart(item.id)}
+                  onDecrement={() => decrementItemQuantity(item.id)} // Decrementa a quantidade
                 />
                 <SubtotalMobile>
                   R$ {(item.price * item.quantity).toFixed(2)}
@@ -338,7 +338,7 @@ const Cart: React.FC = () => {
             <SubtotalDesktop>
               R$ {(item.price * item.quantity).toFixed(2)}
             </SubtotalDesktop>
-            <TrashIconDesktop onClick={() => removeItemFromCart(item.id)} />
+            <TrashIconDesktop onClick={() => removeItemFromCart(item.id)} /> {/* Remove todo o item */}
           </CartItem>
         ))}
         <Footer>

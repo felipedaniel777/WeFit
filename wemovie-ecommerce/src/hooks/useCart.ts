@@ -23,10 +23,18 @@ export const useCart = () => {
     });
   };
 
-  const removeItemFromCart = (id: string) => {
+  const decrementItemQuantity = (id: string) => {
     setCartItems((prevItems) =>
-      prevItems.filter((item) => item.id !== id)
+      prevItems
+        .map((item) =>
+          item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+        )
+        .filter((item) => item.quantity > 0) 
     );
+  };
+
+  const removeItemFromCart = (id: string) => {
+    setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
   };
 
   const clearCart = () => {
@@ -41,6 +49,7 @@ export const useCart = () => {
   return {
     cartItems,
     addItemToCart,
+    decrementItemQuantity, 
     removeItemFromCart,
     clearCart,
     cartTotal,
