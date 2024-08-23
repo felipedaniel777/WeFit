@@ -20,7 +20,7 @@ Certifique-se de que você tenha instalado:
    Abra o terminal e execute o seguinte comando:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/felipedaniel777/WeFit.git
 
     **Navegue até o diretório do projeto:**
     
