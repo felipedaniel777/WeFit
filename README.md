@@ -21,10 +21,6 @@ Certifique-se de que você tenha instalado:
 
    ```bash
    git clone https://github.com/felipedaniel777/WeFit.git
-
-    **Navegue até o diretório do projeto:**
-    
-    Após o clone ser concluído, entre no diretório do projeto:
     
     `cd seu-repositorio` 
     
