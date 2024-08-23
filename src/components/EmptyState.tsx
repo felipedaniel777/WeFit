@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../ui/Button";
-import emptyStateImage from "../../assets/Frame 2111.png";
+import Button from "./Button";
+import emptyStateImage from "../assets/Frame 2111.png";
 import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`

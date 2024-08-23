@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useMovies } from '../hooks/useMovies';
-import CardItem from '../components/ui/CardItem';
-import LoadState from '../components/ui/LoadState';
-import EmptyState from "../components/ui/EmptyState";
+import CardItem from '../components/CardItem';
+import LoadState from '../components/LoadState';
+import EmptyState from "../components/EmptyState";
 
 const MoviesGrid = styled.div`
   display: grid;

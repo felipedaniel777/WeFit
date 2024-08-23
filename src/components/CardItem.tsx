@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "./Button";
-import { useCart } from "../../context/CartContext";
+import { useCart } from "../context/CartContext";
 
 interface CartItemProps {
   id: string;
@@ -45,12 +45,12 @@ const MoviePrice = styled.p`
 `;
 
 const CardItem: React.FC<CartItemProps> = ({ id, image, title, price }) => {
-  const [count, setCount] = useState(0); // Estado local para o contador do botão
-  const { addItemToCart } = useCart(); // Função do contexto para adicionar ao carrinho
+  const [count, setCount] = useState(0);
+  const { addItemToCart } = useCart(); 
 
   const handleAddToCart = () => {
-    addItemToCart({ id, title, price, image }); // Adiciona ao carrinho global
-    setCount(count + 1); // Incrementa o contador local
+    addItemToCart({ id, title, price, image }); 
+    setCount(count + 1);
   };
 
   return (

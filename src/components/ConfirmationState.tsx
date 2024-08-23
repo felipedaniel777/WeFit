@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../ui/Button";
-import ConfirmationStateImage from "../../assets/Frame 2115.png";
+import Button from "./Button";
+import ConfirmationStateImage from "../assets/Frame 2115.png";
 
 const Container = styled.div`
   display: flex;

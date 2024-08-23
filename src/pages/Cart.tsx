@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useCart } from "../context/CartContext";
 import { FaTrash } from "react-icons/fa";
-import Button from "../components/ui/Button";
-import QuantityCounter from "../components/ui/QuantityCounter";
-import EmptyState from "../components/ui/EmptyState";
-import ConfirmationState from "../components/ui/ConfirmationState"; // Novo componente de confirmação
-import { useNavigate } from "react-router-dom"; // Para redirecionamento
+import Button from "../components/Button";
+import QuantityCounter from "../components/QuantityCounter";
+import EmptyState from "../components/EmptyState";
+import ConfirmationState from "../components/ConfirmationState";
+import { useNavigate } from "react-router-dom";
 
 const CartContainer = styled.div`
   padding: 24px;

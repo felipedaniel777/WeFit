@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { useCart } from '../../context/CartContext';
+import { useCart } from '../context/CartContext';
 import { IoBagRemoveSharp } from "react-icons/io5";
 
 const HeaderContainer = styled.header`
