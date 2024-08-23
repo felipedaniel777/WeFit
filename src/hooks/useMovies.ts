@@ -16,7 +16,7 @@ export const useMovies = () => {
   useEffect(() => {
     const loadMovies = async () => {
       setLoading(true);
-      await new Promise(resolve => setTimeout(resolve, 3000));
+      await new Promise(resolve => setTimeout(resolve, 2000));
       const data = await fetchMovies();
       setMovies(data);
       setLoading(false);
