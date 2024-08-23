@@ -1,6 +1,6 @@
-# Breadcrumb Component Analysis
+# Desafio React WeFit
 
-Este repositório contém a análise de um componente Breadcrumb desenvolvido em React, que faz parte de um fluxo de navegação em uma aplicação web. O componente foi avaliado em relação aos requisitos estabelecidos no projeto.
+Este repositório contém a análise de um componente Breadcrumb desenvolvido em React, que faz parte de um fluxo de navegação em uma aplicação web. E também o site de filmes solicitado em React.
 
 ## Estrutura do Repositório
 
@@ -25,10 +25,6 @@ Certifique-se de que você tenha instalado:
     **Navegue até o diretório do projeto:**
     
     Após o clone ser concluído, entre no diretório do projeto:
-    
-    bash
-    
-    Copiar código
     
     `cd seu-repositorio` 
     
