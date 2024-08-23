@@ -48,7 +48,7 @@ const ProductInfo = styled.div`
   align-items: center;
 
   img {
-    widht: 100%;
+    width: 100%;
     max-width: 80px;
     height: auto;
     border-radius: 4px;

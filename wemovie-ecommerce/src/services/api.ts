@@ -6,6 +6,5 @@ export const fetchMovies = async (): Promise<Movie[]> => {
     throw new Error('Failed to fetch movies');
   }
   const data = await response.json();
-  console.log('API Response:', data);
   return data.products;
 };

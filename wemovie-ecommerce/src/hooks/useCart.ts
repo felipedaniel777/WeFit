@@ -25,13 +25,7 @@ export const useCart = () => {
 
   const removeItemFromCart = (id: string) => {
     setCartItems((prevItems) =>
-      prevItems.reduce((acc, item) => {
-        if (item.id === id) {
-          if (item.quantity === 1) return acc;
-          return [...acc, { ...item, quantity: item.quantity - 1 }];
-        }
-        return [...acc, item];
-      }, [] as CartItem[])
+      prevItems.filter((item) => item.id !== id)
     );
   };
 

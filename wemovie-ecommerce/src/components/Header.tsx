@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
-import { IoBagRemoveSharp } from "react-icons/io5";
+import bagIcon from '../assets/icon-bag.png'; 
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -24,6 +24,14 @@ const CartInfo = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  padding: 8px;
+  border-radius: 4px;
+
+  &:hover {
+    transform: translateY(-2px);
+    background-color: #344466;
+  }
 `;
 
 const CartDetails = styled.div`
@@ -47,7 +55,7 @@ const CartDetails = styled.div`
   }
 `;
 
-const ShoppingBagIcon = styled(IoBagRemoveSharp)`
+const ShoppingBagIcon = styled.img`
   width: 24px;
   height: 24px;
   color: white;
@@ -65,7 +73,7 @@ const Header: React.FC = () => {
           <div className="cart-title">Meu Carrinho</div>
           <div className="cart-items">{itemCount} {itemCount === 1 ? 'item' : 'itens'}</div>
         </CartDetails>
-        <ShoppingBagIcon />
+        <ShoppingBagIcon src={bagIcon} alt="Shopping Bag" />
       </CartInfo>
     </HeaderContainer>
   );
