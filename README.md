@@ -28,19 +28,11 @@ Certifique-se de que você tenha instalado:
     
     Dentro do diretório do projeto, instale as dependências necessárias com o npm:
     
-    bash
-    
-    Copiar código
-    
     `npm install` 
     
 4.  **Execute o projeto:**
     
     Após a instalação das dependências, inicie o servidor de desenvolvimento:
-    
-    bash
-    
-    Copiar código
     
     `npm start` 
     
